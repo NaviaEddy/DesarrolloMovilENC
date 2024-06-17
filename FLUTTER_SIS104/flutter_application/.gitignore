@@ -1,0 +1,62 @@
+# Flutter/Dart/Pub related files
+**/doc/api/
+
+# Avoid committing generated files
+*.dart_tool/
+*.packages
+*.flutter-plugins
+*.flutter-plugins-dependencies
+.packages
+.pdm/
+.idea/
+.vscode/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.metadata
+.version
+*.iml
+
+# Uncomment if you have an ios/ folder.
+# Generated Xcode files and backups.
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/.symlinks/
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+
+# Uncomment if you have an android/ folder.
+# Gradle-related files
+android/.gradle/
+android/app/libs/
+android/app/build/
+android/local.properties
+android/.idea/
+android/gradle/
+android/build/
+
+# VS Code related files
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/
+
+# Files and directories created by pub
+pubspec.lock
+.dart_tool/
+
+# Files and directories created by flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# Obsolete files
+*.lock
+pubspec.lock

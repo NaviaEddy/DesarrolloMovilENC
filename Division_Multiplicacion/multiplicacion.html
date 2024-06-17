@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplicación Paso a Paso</title>
+    <script>
+        function multiplicarPasoAPaso() {
+            let multiplicando = parseInt(document.getElementById("multiplicando").value);
+            let multiplicador = parseInt(document.getElementById("multiplicador").value);
+            let pasos = [];
+            let resultado = 0;
+            let pasosHTML1 = '';
+            let pasosHTML2 = '';
+
+            // Convertir el multiplicador a un array de dígitos
+            let multiplicadorArray = Array.from(String(multiplicador), Number);
+            let multiplicandoArray = Array.from(String(multiplicando), Number);
+
+            // Realizar la multiplicación paso a paso
+            multiplicadorArray.forEach((digito, index) => {
+                multiplicandoArray.forEach((mult, index)=>{
+                    resultado += mult*digito;
+                    pasosHTML1 += `<br><strong>${digito} * ${mult}: ${mult*digito}</strong>`;
+                    document.getElementById("resultado").innerHTML = pasosHTML1;
+                });
+                pasosHTML1 += `<br><strong>Resultado_suma: ${resultado}</strong>`;
+                document.getElementById("resultado").innerHTML = pasosHTML1;
+            });
+
+            // let parcial = multiplicando * digito;
+            //     pasosHTML1 += `<br><strong>${}: ${resultado}</strong>`;
+            //     let parcialConCeros = parcial * Math.pow(10, index);
+            //     pasos.push(parcialConCeros);
+
+            // // Sumar todos los pasos parciales
+            // resultado = pasos.reduce((acc, val) => acc + val, 0);
+
+            // // Mostrar los pasos y el resultado final
+            // let pasosHTML = pasos.map((paso, index) => `Paso ${index + 1}: ${paso}`).join('<br>');
+            // pasosHTML += `<br><strong>Resultado Final: ${resultado}</strong>`;
+            // document.getElementById("resultado").innerHTML = pasosHTML;
+        }
+    </script>
+</head>
+<body>
+    <h1>Multiplicación Paso a Paso</h1>
+    <form id="multiplicar">
+        <label for="multiplicando">Multiplicando:</label>
+        <input type="number" id="multiplicando" value="0"><br><br>
+        <label for="multiplicador">Multiplicador:</label>
+        <input type="number" id="multiplicador" value="0"><br><br>
+        <button type="button" onclick="multiplicarPasoAPaso()">Multiplicar</button>
+    </form>
+    <h2>Resultado:</h2>
+    <div id="resultado"></div>
+</body>
+</html>

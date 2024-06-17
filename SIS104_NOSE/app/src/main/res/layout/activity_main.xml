@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.Main">
+
+
+    <Button
+        android:id="@+id/buttonCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonGrafico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grafico"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="265dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonCRUD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRUD"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="383dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="500dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
